@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Monocular Identity-Conditioned Facial Reflectance Reconstruction</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">S^3-Face: SSS-Compliant Facial Reflectance Estimation via Diffusion Priors</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+                <a href="https://xingyuren.github.io/">Xingyu Ren</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://jiankangdeng.github.io/">Jiankang Deng</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://cyh-sj.github.io/">Yuhao Cheng</a><sup>1</sup>,</span>
+            <span class="author-block">Wenhan Zhu<sup>3</sup>,</span>
+          </div>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://daodaofr.github.io/">Yichao Yan</a><sup>1</sup>,</span>
+            <span class="author-block">Xiaokang Yang<sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://profiles.imperial.ac.uk/s.zafeiriou">Stefanos Zafeiriou</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://vision.sjtu.edu.cn/">Chao Ma</a><sup>1&dagger;</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>MoE Key Lab of Artificial Intelligence, AI Institute, Shanghai Jiao Tong University</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>2</sup>Imperial College London</span>&nbsp&nbsp&nbsp&nbsp<span class="author-block"><sup>3</sup>Xueshen AI</span>
+          </div>
+
+          <div class="is-size-6">
+            <span>(<sup>&dagger;</sup>Corresponding author)</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+              CVPR 2025
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2404.00301"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=LUpP089LO8E"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/xingyuren/id2reflectance"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0mGiWfEBWEJpx49_Q0B4oKmEAF3B3uex5QMqcK335cLnyfg/viewform"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Dataset Access</span>
+                  </a>
+              </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img class="img-responsive" src="./static/images/teaser.png" alt="Teaser">
+      <h2 class="subtitle has-text-justified">
+        <span class="S3Face">We introduce S<sup>3</sup>Face, a comprehensive high-quality facial reflectance estimation method. Our approach leverages a pre-
+          trained diffusion model as a reflectance prior, robustly generating subsurface scattering (SSS)-compliant facial reflectance, particularly for
+          hemoglobin and melanin maps. S<sup>3</sup>Face adeptly handles diverse input subjects and formats, delivering photorealistic rendering results.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent 3D face reconstruction methods have made remarkable advancements, yet achieving high-quality facial reflectance from monocular input remains challenging. Existing methods rely on the light-stage captured data to learn facial reflectance models. However, limited subject diversity in these datasets poses challenges in achieving good generalization and broad applicability. This motivates us to explore whether the extensive priors captured in recent generative diffusion models (e.g., Stable Diffusion) can enable more generalizable facial reflectance estimation as these models have been pre-trained on large-scale internet image collections containing rich visual patterns. In this paper, we introduce the use of Stable Diffusion as a prior for facial reflectance estimation, achieving robust results with minimal captured data for fine-tuning. We present S<sup>3</sup>-Face, a comprehensive framework capable of producing SSS-compliant skin reflectance from in-the-wild images. Our method adopts a two-stage training approach: in the first stage, DSN-Net is trained to predict diffuse albedo, specular albedo, and normal maps from in-the-wild images using a novel joint reflectance attention module. In the second stage, HM-Net is trained to generate hemoglobin and melanin maps based on the diffuse albedo predicted in the first stage, yielding SSS-compliant and detailed reflectance maps. Extensive experiments demonstrate that our method achieves strong generalization and produces high-fidelity, SSS-compliant facial reflectance estimation.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+<div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/LUpP089LO8E"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+
+
+    <!-- Paper Pipeline. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Pipeline</h2>
+        <img class="img-responsive" src="./static/images/pipeline.png" alt="Pipeline">
+        <div class="content has-text-justified">
+        <span class="Pipeline">Overview of the DSN-Net. Given paired inputs, we first extract corresponding latent codes through a frozen encoder. We then
+          jointly train the reflectance model using two alternating modes: 1) ”Single image-multiple reflections” mode (Left): The switcher selects
+          a reflection type (diffuse, specular, or normal) to concatenate with the color latent. 2) ”Multiple images-single diffuse reflection” mode
+          (Right): The switcher selects color latents under different lighting conditions, each concatenated with the diffuse latent. These combined
+          inputs are then fed into the network for noise prediction training.
+        </div>
+      </div>
+    </div>
+    <!--/ Paper Pipeline. -->
+  </div>
+</section>
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@InProceedings{Ren_2024_CVPR,
+  author    = {Ren, Xingyu and Deng, Jiankang and Cheng, Yuhao and Guo, Jia and Ma, Chao and Yan, Yichao and Zhu, Wenhan and Yang, Xiaokang},
+  title     = {Monocular Identity-Conditioned Facial Reflectance Reconstruction},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <!-- <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div> -->
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            We borrow the website <a href="https://github.com/nerfies/nerfies.github.io">template</a> from this,
+            many thanks for their great help!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
